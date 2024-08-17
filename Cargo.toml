@@ -1,0 +1,23 @@
+[package]
+name = "rust-action"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+html2md = "0.2"
+anyhow = "1"
+clap = { version = "3", features = ["derive"] } # 命令行解析
+colored = "2" # 命令终端多彩显示
+jsonxf = "1.1" # JSON pretty print 格式化
+mime = "0.3" # 处理 mime 类型
+reqwest = { version = "0.11", features = ["json","blocking"] } # HTTP 客户端
+tokio = { version = "1", features = ["full"] } # 异步处理库
+dashmap = "6.0.1"
+tokio-stream = "0.1.15"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+tracing = "0.1.40"
+futures = "0.3.30"
+tokio-util = { version = "0.7.10", features = ["codec"] }
+futures-util = "0.3.30"
